@@ -58,14 +58,14 @@
     // scene.background = new THREE.CubeTextureLoader()
     //   .setPath("/Users/CGB/Projects/WebGL3JS/images/")
     //   .load(["5.jpg", "4.jpg", "5.jpg", "4.jpg", "3.png", "3.png"]);
-    var texture = new THREE.TextureLoader().load("images/3.png");
+    var texture = new THREE.TextureLoader().load("images/chars.png ");
 
     // immediately use the texture for material creation
     var material = new THREE.MeshBasicMaterial({
       map: texture
     });
 
-    var geometry = new THREE.BoxGeometry(1, 5, 5);
+    var geometry = new THREE.BoxGeometry(0.2, 5, 5);
     // var material = new THREE.MeshLambertMaterial({
     //   color: 0xffcc00
     //   // map: THREE.ImageUtils.loadTexture(
