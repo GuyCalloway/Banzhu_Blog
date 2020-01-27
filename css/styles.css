@@ -117,14 +117,15 @@ body {
 }
 
 .feature img {
-  height: 7em;
-  width: 4em;
+  opacity: 0.3;
+  height: 9em;
+  width: 5em;
   padding-right: .25rem;
 }
 
 .feature2 img {
-  height: 4em;
-  width: 3em;
+  height: 3em;
+  width: 2em;
   padding-right: .5rem;
 }
 
