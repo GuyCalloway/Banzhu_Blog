@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -117,13 +119,18 @@ body {
 }
 
 .feature img {
+  transition: 100ms;
+  transform: scale(1);
   opacity: 0.3;
   height: 9em;
   width: 5em;
   padding-right: .25rem;
+  filter: alpha(opacity=40);
 }
 
 .feature2 img {
+  transition: 100ms;
+  transform: scale(1);
   height: 3em;
   width: 2em;
   padding-right: .5rem;
@@ -166,7 +173,18 @@ body {
   transform: scale(1);
 }
 
-.cta:hover, .cta:focus {
+.feature img:hover {
+  opacity: 0.4;
+  filter: alpha(opacity=30);
+}
+
+.feature2 img:hover {
+  opacity: 0.9;
+}
+
+
+.cta:hover,
+.cta:focus {
   transform: scale(1.1);
 }
 
