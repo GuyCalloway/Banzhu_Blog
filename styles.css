@@ -1,0 +1,177 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --accent-color: rgb(143, 92, 255);
+  --heading-font-family: 'Poppins', sans-serif;
+  --body-font-family: 'lato', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #F8F9FB;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--body-font-family)
+}
+
+.route-comparison {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  margin: 1rem;
+}
+
+.route-column {
+  background-color: white;
+  box-shadow: 0 7px 30px rgba(52, 31, 97, 0.1);
+  padding: 2rem;
+  flex-grow: 1;
+  max-width: 275px;
+  flex-basis: 0;
+  border-radius: 8px;
+}
+
+.route-column.blog {
+  background-color: var(--accent-color);
+  box-shadow: 0 7px 30px rgba(52, 13, 135, 0.3);
+  color: white;
+  margin-top: -1.5rem;
+  padding-top: 3.5rem;
+  margin-bottom: -1.5rem;
+  padding-bottom: 3.5rem;
+  position: relative;
+}
+
+.route-column:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.route-column:last-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.route-header {
+  /* all text in here */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+}
+
+.route {
+  font-size: 3rem;
+  display: flex;
+}
+
+.pound-sign {
+  font-size: 1.5rem;
+  margin-top: .5rem;
+  margin-right: .25rem
+}
+
+.per-month {
+  font-size: 1rem;
+  align-self: flex-end;
+  margin-bottom: 1.1rem;
+  margin-left: 0.25rem;
+}
+
+.plan-name {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(53, 47, 47, 0.2);
+  /* fourth value is opacity */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.route-column.blog .divider {
+  background-color: rgba(255, 255, 255, 0.2)
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  margin: .5rem;
+}
+
+.feature2 {
+  display: flex;
+  align-items: center;
+  margin: .5rem;
+}
+
+.feature img {
+  height: 7em;
+  width: 4em;
+  padding-right: .25rem;
+}
+
+.feature2 img {
+  height: 4em;
+  width: 3em;
+  padding-right: .5rem;
+}
+
+.img-sign {
+  display: flex;
+  align-items: center;
+  margin: .5rem;
+}
+
+.img-sign img {
+  height: 2em;
+  width: 3.5em;
+  padding-right: .5rem;
+}
+
+.most-blog {
+  position: absolute;
+  top: .5rem;
+  left: .5rem;
+  right: .5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--heading-font-family)
+}
+
+.cta {
+  border: none;
+  background-color: rgba(189, 137, 238, 0.9);
+  color: white;
+  width: 100%;
+  padding: .75rem 1rem;
+  cursor: pointer;
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 3rem;
+  transition: 100ms;
+  transform: scale(1);
+}
+
+.cta:hover, .cta:focus {
+  transform: scale(1.1);
+}
+
+/* sppcific change for blog channel access using cta after class */
+
+.route-column.blog .cta {
+  background: rgba(105, 23, 182, 0.6);
+  color: whitesmoke
+}
